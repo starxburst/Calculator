@@ -15,8 +15,18 @@ function divide(a, b){
 }
 
 function operate(a, operand, b){
-    if(operand == '+') add(a, b);
-    else if (operand == '-') subtract(a, b);
-    else if (operand == '*') multiply(a, b);
-    else if (operand == '/') divide(a, b);
+    switch(operand) {
+        case '+':
+            add(a, b);
+            break;
+        case '-':
+            subtract(a, b);
+            break;
+        case '*':
+            multiply(a, b);
+            break;
+        case '/':
+            divide(a, b);
+            break;
+    }
 }

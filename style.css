@@ -58,9 +58,7 @@ button:hover {
 
 p#subDisplay {
     grid-area: subdisplay;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    text-align: end;
     font-size: 25px;
     height: 25px;
     margin-bottom: 50px;
@@ -68,9 +66,7 @@ p#subDisplay {
 
 p#display {
     grid-area: display;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    text-align: end;
     font-size: 50px;
     height: 50%;
     border: 3px solid black;

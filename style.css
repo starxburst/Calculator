@@ -66,6 +66,8 @@ p#subDisplay {
 
 p#display {
     grid-area: display;
+    align-self:flex-start;
+    word-break: break-all;
     text-align: end;
     font-size: 50px;
     height: 50%;
@@ -74,6 +76,7 @@ p#display {
     background-color: cornflowerblue;
     margin-left: 10px;
     margin-right: 10px;
+    align-self:center;
 }
 
 button#zero {

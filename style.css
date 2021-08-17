@@ -1,3 +1,154 @@
+html {
+    background-color: #80cea7;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    width: 500px;
+    height: 600px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: #daad86;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 20% 10% 15% 15% 15% 15%;
+    grid-template-areas:
+    "subdisplay subdisplay subdisplay subdisplay"
+    "display display display display"
+    "null null clear delete"
+    "seven eight nine divide"
+    "four five six multiply"
+    "one two three subtract"
+    "zero point add equal";
+}
+
+button {
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    border-bottom: 3px solid tomato;
+    margin: 5px 5px 5px 5px;
+}
+
+button:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+p#subDisplay {
+    grid-area: subdisplay;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 25px;
+    height: 25px;
+    margin-bottom: 50px;
+}
+
+p#display {
+    grid-area: display;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 50px;
+    height: 50%;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button#zero {
+    grid-area: zero;
+}
+
+button#one {
+    grid-area: one;
+}
+
+button#two {
+    grid-area: two;
+}
+
+button#three {
+    grid-area: three;
+}
+
+button#four {
+    grid-area: four;
+}
+
+button#five {
+    grid-area: five;
+}
+
+button#six {
+    grid-area: six;
+}
+
+button#seven {
+    grid-area: seven;
+}
+
+button#eight {
+    grid-area: eight;
+}
+
+button#nine {
+    grid-area: nine;
+}
+
+button#point {
+    grid-area: point;
+}
+
+button#add {
+    grid-area: add;
+}
+
+button#subtract {
+    grid-area: subtract;
+}
+
+button#multiply {
+    grid-area: multiply;
+}
+
+button#divide {
+    grid-area: divide;
+}
+
+button#equal {
+    grid-area: equal;
+}
+
+button#clear {
+    grid-area: clear;
+    background-color: chocolate;
+}
+
+button#delete {
+    grid-area: delete;
 }
